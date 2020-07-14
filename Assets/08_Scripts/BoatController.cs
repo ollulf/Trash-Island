@@ -1,5 +1,4 @@
-﻿using Ditzelgames;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BoatController : MonoBehaviour
 {
