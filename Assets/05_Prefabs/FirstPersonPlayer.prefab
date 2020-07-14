@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4032041842450583977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8671980345728822298}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8671980345728822298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032041842450583977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.93, z: 2.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6748602642822970244}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6748602642822970246
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +41,7 @@ GameObject:
   - component: {fileID: 6748602642822970244}
   - component: {fileID: 6748602642822970245}
   - component: {fileID: 6748602642822970243}
+  - component: {fileID: 8947838658245095462}
   m_Layer: 0
   m_Name: FirstPersonPlayer
   m_TagString: Player
@@ -32,6 +63,7 @@ Transform:
   - {fileID: 6748602643912347520}
   - {fileID: 6748602643261317523}
   - {fileID: 6748602643163870768}
+  - {fileID: 8671980345728822298}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74,6 +106,22 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &8947838658245095462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6748602642822970246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91672715c0fedd41a4381accf3fd3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carryingCapacity: 5
+  spawnPoint: {fileID: 4032041842450583977}
+  trashModel: {fileID: 6622252444282447259, guid: 1b9ab085514b29244bda4ce3ba8d1b3c,
+    type: 3}
 --- !u!1 &6748602643163870769
 GameObject:
   m_ObjectHideFlags: 0
