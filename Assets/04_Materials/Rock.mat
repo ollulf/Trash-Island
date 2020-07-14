@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Rock
-  m_Shader: {fileID: 4800000, guid: 362e007407c60654ba59254be2086c13, type: 3}
+  m_Shader: {fileID: 4800000, guid: 412a9ef2a32d3431bbd7f1b241b8b48e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -72,6 +72,8 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RimAmount: 0.397
+    - _RimThreshold: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -79,6 +81,9 @@ Material:
     - _WindQuality: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.5943396, g: 0.55894196, b: 0.5410733, a: 1}
+    - _AmbientColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
+    - _Color: {r: 0.3679245, g: 0.33556998, b: 0.3175952, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColor: {r: 0.7830189, g: 0.40622896, b: 0.33610716, a: 1}
