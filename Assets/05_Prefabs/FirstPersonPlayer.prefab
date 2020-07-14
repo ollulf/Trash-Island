@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4032041842450583977}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.6699997, z: 2.02}
+  m_LocalPosition: {x: 0, y: -0.1, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6748602643261317523}
@@ -117,11 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91672715c0fedd41a4381accf3fd3cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carryingCapacity: 5
+  carryingCapacity: 10
   spawnPoint: {fileID: 4032041842450583977}
   trashModel: {fileID: 6622252444282447259, guid: 1b9ab085514b29244bda4ce3ba8d1b3c,
     type: 3}
-  throwingForce: 100
+  throwingForce: 500
+  funModeEnabled: 0
 --- !u!1 &6748602643163870769
 GameObject:
   m_ObjectHideFlags: 0

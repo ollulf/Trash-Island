@@ -23,8 +23,12 @@ public class PickUpController : MonoBehaviour
 
     void Start()
     {
-        throwingForce = 3000;
-        currentAmount = 3000;
+        if (funModeEnabled)
+        {
+            throwingForce = 3000;
+            currentAmount = 3000;
+        }
+
     }
 
     void Update()
