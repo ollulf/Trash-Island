@@ -2,6 +2,8 @@
 {
 
 
+      
+
     Properties
     {
         // What color the water will sample when the surface below is shallow.
@@ -37,6 +39,7 @@
         _FoamMaxDistance("Foam Maximum Distance", Float) = 0.4
         _FoamMinDistance("Foam Minimum Distance", Float) = 0.04     
     }
+    
     SubShader
     {
         Tags
