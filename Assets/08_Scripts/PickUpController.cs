@@ -7,6 +7,12 @@ public class PickUpController : MonoBehaviour
     [SerializeField]
     private int carryingCapacity = 5;
 
+    [SerializeField]
+    private GameObject spawnPoint;
+
+    [SerializeField]
+    private GameObject trashModel;
+
     private int currentAmount = 0;
 
     void Update()
@@ -14,7 +20,11 @@ public class PickUpController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             TryToPickup();
+        }
 
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            TryThrowTrash();
         }
     }
 
@@ -33,5 +43,18 @@ public class PickUpController : MonoBehaviour
             }
         }
     }
+
+    private void TryThrowTrash()
+    {
+        if(currentAmount > 0)
+        {
+            Instantiate(trashModel, spawnPoint.transform.position, Quaternion.identity);
+
+            currentAmount -= 1;
+        }
+
+
+    }
+
 
 }
