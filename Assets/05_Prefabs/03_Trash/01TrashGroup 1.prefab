@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5282690205321392906}
-  - component: {fileID: 3587264697336387240}
   - component: {fileID: 2161876806056355528}
   m_Layer: 0
   m_Name: 01TrashGroup 1
@@ -36,19 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3587264697336387240
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5852680601143579765}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3036637, y: 0.067237295, z: 0.32747933}
-  m_Center: {x: 0.052111972, y: -0.0038327158, z: -0.066856705}
 --- !u!54 &2161876806056355528
 Rigidbody:
   m_ObjectHideFlags: 0
