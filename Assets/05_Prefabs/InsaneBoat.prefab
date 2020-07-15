@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 87073487861347167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.19, y: -5.05, z: 17.52}
-  m_LocalScale: {x: 2.6725, y: 2.4561994, z: 3.832}
+  m_LocalScale: {x: 2.6725, y: 2.4561994, z: 1.7303288}
   m_Children: []
   m_Father: {fileID: 164643515778539263}
   m_RootOrder: 10
@@ -106,9 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c34637ee4833a4b8240519453b1118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boat: {fileID: 0}
-  Player: {fileID: 0}
-  BoatCamera: {fileID: 6711714150151782972}
+  boat: {fileID: 0}
+  player: {fileID: 0}
+  boatCamera: {fileID: 0}
+  InTrigger: 0
 --- !u!1 &376584228991072760
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +908,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3828077313474618132}
   - component: {fileID: 2440629157554581036}
-  - component: {fileID: 1843533437405933953}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -972,14 +972,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &1843533437405933953
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6711714150151782972}
-  m_Enabled: 1
 --- !u!1 &8214514841832079837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1043,7 @@ Transform:
   - {fileID: 6105271576478350587}
   - {fileID: 2650554089925267107}
   - {fileID: 6001173755094956049}
+  - {fileID: 1529064633149202693}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1121,6 +1114,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!1 &9109228854063061996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1529064633149202693}
+  m_Layer: 0
+  m_Name: Spawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1529064633149202693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109228854063061996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2, y: -4.52, z: 10.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 164643515778539263}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9147860022007712974
 GameObject:
   m_ObjectHideFlags: 0
