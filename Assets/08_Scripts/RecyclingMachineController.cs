@@ -34,7 +34,9 @@ public class RecyclingMachineController : MonoBehaviour
     {
         if (trashNeededToMakeBomb <= currentTrash)
         {
-            Instantiate(bomb, spawnPoint.transform.position, Quaternion.identity);
+            GameObject bomb_ = Instantiate(bomb, spawnPoint.transform.position, Quaternion.identity) as GameObject;
+            bomb_.GetComponent<Rigidbody>().AddForce(bomb_.transform.forward * 600);
+
             currentTrash = 0;
 
             Debug.Log("Made a Bomb");

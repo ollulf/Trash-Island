@@ -5,7 +5,7 @@ using UnityEngine;
 public class BombScript : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    [SerializeField]
     GameObject trashParticles;
 
     public bool isActive = false;
@@ -33,6 +33,12 @@ public class BombScript : MonoBehaviour
 
     private void ExplosionVisualisation() 
     {
-        //VIsualisation
+        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
+        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
+        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
+        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
+        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
+        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
+        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
     }
 }
