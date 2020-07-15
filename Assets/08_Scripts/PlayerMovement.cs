@@ -5,46 +5,33 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
+    public Rigidbody Rigidbody;
 
     public float speed = 12f;
-    public float gravity = -9.81f;
-    public float jumpHeight = 3f;
+    public float jumpforce = 3f;
 
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
-
-    Vector3 velocity;
-    bool isGrounded;
-
+    float lastGroundedTimeStamp;
     private Transform respawnTarget;
 
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if(isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f;
-        }
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * speed * Time.deltaTime);
+        
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if(Input.GetButtonDown("Jump") && IsGrounded())
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+
+            Rigidbody.AddForce(new Vector3(0,jumpforce,0),ForceMode.VelocityChange);
         }
 
 
-        velocity.y += gravity * Time.deltaTime;
-
-        controller.Move(velocity * Time.deltaTime);
+        Move(new Vector3(move.x * speed,0,move.z*speed));
     }
 
     public void Respawn()
@@ -66,5 +53,23 @@ public class PlayerMovement : MonoBehaviour
     {
         respawnTarget = target;
         Debug.Log("Setting respawn to " + target.name);
+    }
+    private void Move(Vector3 forceInput)
+    {
+        Rigidbody.velocity = new Vector3(forceInput.x, Rigidbody.velocity.y, forceInput.z);
+
+    }
+    private bool IsGrounded()
+    {
+        return Time.time - lastGroundedTimeStamp < Time.deltaTime;
+
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        float impactAngle = Vector3.Dot(collision.GetContact(0).normal, Vector3.up);
+        if(impactAngle > 0.1)
+        {
+            lastGroundedTimeStamp = Time.time;
+        }
     }
 }

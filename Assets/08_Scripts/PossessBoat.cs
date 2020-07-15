@@ -63,6 +63,8 @@ public class PossessBoat : MonoBehaviour
 
 
         player.GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<Collider>().isTrigger = true;
+        player.GetComponent<Rigidbody>().isKinematic = true;
         boat.GetComponent<BoatController>().enabled = true;
         player.GetComponentInChildren<Camera>().enabled = false;
         boatCamera.SetActive(true);
@@ -73,12 +75,15 @@ public class PossessBoat : MonoBehaviour
 
     private void UnPossess()
     {
+        player.transform.parent = null;
         player.GetComponent<PlayerMovement>().enabled = true;
+        player.GetComponent<Collider>().isTrigger = false;
         boat.GetComponent<BoatController>().enabled = false;
         player.GetComponentInChildren<Camera>().enabled = true;
+        player.GetComponent<Rigidbody>().isKinematic = false;
         boatCamera.SetActive(false);
         isPossessed = false;
-        player.transform.parent = null;
+        
         Debug.Log("unpossessed");
         
     }

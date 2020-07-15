@@ -46,11 +46,11 @@ public class BoatController : MonoBehaviour
         Rigidbody.maxAngularVelocity = MaxAngularVel;
         if (Input.GetKey(KeyCode.W))
         {
-            Rigidbody.AddForceAtPosition(force, Motor.position);
+            Rigidbody.AddForceAtPosition(force, Motor.position,ForceMode.VelocityChange);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            Rigidbody.AddForceAtPosition(-force, Motor.position);
+            Rigidbody.AddForceAtPosition(-force, Motor.position, ForceMode.VelocityChange);
         }
 
         float dot = Vector3.Dot(Rigidbody.velocity.normalized, transform.forward);
@@ -74,6 +74,16 @@ public class BoatController : MonoBehaviour
 
     }
 
-
-
+//   private void OnCollisionEnter(Collision collision)
+//   {
+//       if(collision.gameObject.CompareTag("Trash")|| collision.gameObject.CompareTag("Player"))
+//       collision.transform.parent = transform;
+//   }
+//   private void OnCollisionExit(Collision collision)
+//   {
+//       if(collision.transform.parent == transform)
+//       {
+//           collision.transform.parent = null;
+//       }
+//   }
 }
