@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    private Transform respawnTarget;
+
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -39,8 +41,30 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
+
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    public void Respawn()
+    {
+        if(respawnTarget == null)
+            
+        {
+            Debug.LogWarning("Cannot respawn, no checkpoint reached");
+        }
+        else
+        {
+            transform.position = respawnTarget.position;
+            Physics.SyncTransforms();
+            Debug.Log("Respawn");
+        }
+       
+    }
+    public void SetRespawn(Transform target)
+    {
+        respawnTarget = target;
+        Debug.Log("Setting respawn to " + target.name);
     }
 }
