@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Machine
+  m_Name: MachineDark
   m_Shader: {fileID: 4800000, guid: 412a9ef2a32d3431bbd7f1b241b8b48e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
