@@ -32,7 +32,7 @@ public class RecyclingMachineController : MonoBehaviour
 
     private void TryToMakeBomb()
     {
-        if (trashNeededToMakeBomb == currentTrash)
+        if (trashNeededToMakeBomb <= currentTrash)
         {
             Instantiate(bomb, spawnPoint.transform.position, Quaternion.identity);
             currentTrash = 0;
