@@ -137,3 +137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbefa86b43670be46a9f27bcc0738018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trashParticles: {fileID: 1258042984590828256, guid: dee76235e9684aa4e8a263a60af966d1,
+    type: 3}
+  isActive: 0
