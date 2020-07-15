@@ -8,17 +8,28 @@ public class PossessBoat : MonoBehaviour
     public GameObject player;
     public GameObject boatCamera;
 
-    bool IsPossessed = false;
+
+    [SerializeField]
     bool InTrigger = false;
+    bool isPossessed;
+
+
+    [SerializeField]
+//    public GameObject spawnpoint;
+
+
+
     public void Start()
     {
         UnPossess();
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player Entered Trigger");
             InTrigger = true;
         }
     }
@@ -27,19 +38,22 @@ public class PossessBoat : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             InTrigger = false;
+            Debug.Log("Player Exits Trigger");
         }
     }
 
-    private void Update()
+    public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) &&InTrigger == true)
+        if (InTrigger && !isPossessed && Input.GetKeyDown(KeyCode.F))
         {
             Possess();
+
         }
-        if (Input.GetKeyDown(KeyCode.F) && InTrigger == false)
+        else if(isPossessed && Input.GetKeyDown(KeyCode.F))
         {
             UnPossess();
         }
+
     }
 
     private void Possess()
@@ -49,21 +63,29 @@ public class PossessBoat : MonoBehaviour
 
 
         player.GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<Collider>().isTrigger = true;
+        player.GetComponent<Rigidbody>().isKinematic = true;
         boat.GetComponent<BoatController>().enabled = true;
         player.GetComponentInChildren<Camera>().enabled = false;
         boatCamera.SetActive(true);
-        IsPossessed = true;
+        isPossessed = true;
         player.transform.parent = boat.transform;
+
     }
 
     private void UnPossess()
     {
+        player.transform.parent = null;
         player.GetComponent<PlayerMovement>().enabled = true;
+        player.GetComponent<Collider>().isTrigger = false;
         boat.GetComponent<BoatController>().enabled = false;
         player.GetComponentInChildren<Camera>().enabled = true;
+        player.GetComponent<Rigidbody>().isKinematic = false;
         boatCamera.SetActive(false);
-        IsPossessed = false;
-        player.transform.parent = null;
+        isPossessed = false;
+        
+        Debug.Log("unpossessed");
+        
     }
 
 }
