@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUpController : MonoBehaviour
 {
     [SerializeField]
-    private int carryingCapacity = 5;
+    public int carryingCapacity = 5;
 
     [SerializeField]
     private GameObject spawnPoint;
@@ -22,9 +22,9 @@ public class PickUpController : MonoBehaviour
     [SerializeField]
     private float throwingForce = 100;
 
-    private int currentAmount = 0;
+    public int currentAmount = 0;
 
-    private int currentBombs = 0;
+    public int currentBombs = 0;
 
     [SerializeField]
     private bool funModeEnabled = false;
