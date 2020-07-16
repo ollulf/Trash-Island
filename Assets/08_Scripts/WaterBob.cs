@@ -35,7 +35,8 @@ public class WaterBob : MonoBehaviour
         return (transform.position.x - (1 - (Random.value * 2))) * distanceModifier;
     }
 
-    private void Update()
+    private void FixedUpdate()
+ 
     {
         Vector3 modifiedPosition = transform.position;
         if (modifiedPosition.x < targetXPosition)
@@ -71,7 +72,7 @@ public class WaterBob : MonoBehaviour
             }
         }
         modifiedPosition.y = initialPosition.y - Mathf.Sin((Time.time + offset) * period) * height;
-        Debug.Log("x: " + transform.position.x + ", (" + targetXPosition + ")");
+        ///Debug.Log("x: " + transform.position.x + ", (" + targetXPosition + ")");
         transform.position = modifiedPosition;
     }
 }
