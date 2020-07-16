@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SewageWater
-  m_Shader: {fileID: 4800000, guid: f24809d953f26f64b9c352c89807da80, type: 3}
+  m_Name: Smoke
+  m_Shader: {fileID: 4800000, guid: 412a9ef2a32d3431bbd7f1b241b8b48e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -23,10 +23,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DepthGradient:
-        m_Texture: {fileID: 2800000, guid: 74226c0f9b8ae5b448a0ff3216590eb1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -36,6 +32,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -59,43 +59,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SurfaceDistortion:
-        m_Texture: {fileID: 2800000, guid: c53bb6b8c40b02141be3fdec5cc582e9, type: 3}
-        m_Scale: {x: 0, y: 0}
-        m_Offset: {x: 0, y: 0}
-    - _SurfaceNoise:
-        m_Texture: {fileID: 2800000, guid: e182ac5d3b797044fb29f3fa2acc3708, type: 3}
-        m_Scale: {x: 0, y: 0}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
+    - _Cull: 2
     - _Cutoff: 0.5
-    - _DepthMaxDistance: 27.1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FoamMaxDistance: 2.3
-    - _FoamMinDistance: 0.04
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 3.31
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ShorelineMaxDistance: 0.4
-    - _ShorelineMinDistance: 0.04
+    - _RimAmount: 0.394
+    - _RimThreshold: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SurfaceDistortionAmount: 0.845
-    - _SurfaceNoiseCutoff: 0.862
     - _UVSec: 0
+    - _WindQuality: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DepthGradientDeep: {r: 0.078497685, g: 0.7321574, b: 0.7924528, a: 0.7490196}
-    - _DepthGradientShallow: {r: 0.44500792, g: 0.735849, b: 0.4130473, a: 0.7254902}
+    - _AmbientColor: {r: 0.8113208, g: 0.79983985, b: 0.79983985, a: 1}
+    - _Color: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShorelineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SurfaceNoiseScroll: {r: 0, g: 0.42, b: 0, a: 0}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColor: {r: 0.7830189, g: 0.40622896, b: 0.33610716, a: 1}
