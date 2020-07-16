@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8783595661220646753}
-  - component: {fileID: 4614926526006072151}
   m_Layer: 0
-  m_Name: 03floatingTrashGroup 1
+  m_Name: 03TrashGroup 1
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,20 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4614926526006072151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4128454566010575962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f5dcbb4fdd684aff9372264cb41db57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  height: 0.1
-  period: 1
 --- !u!1001 &659709373157688367
 PrefabInstance:
   m_ObjectHideFlags: 0
