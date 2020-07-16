@@ -169,9 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5309f3647ecf4428d62d43cf951a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrashPickUp: {fileID: 0}
-  BombPickUp: {fileID: 0}
-  player: {fileID: 0}
+  TrashPickUp: {fileID: 7176105047892594002}
+  BombPickUp: {fileID: 4920206814269420761}
+  player: {fileID: 6748602642822970246, guid: 16972f535908aec46b3d089d8cf0b6bd, type: 3}
 --- !u!1 &5099645390081741631
 GameObject:
   m_ObjectHideFlags: 0
