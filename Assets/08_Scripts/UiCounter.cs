@@ -24,8 +24,8 @@ public class UiCounter : MonoBehaviour
     void Update()
     {
 
-       TrashPickUp.text = "Trash Pick up " + pickup.currentAmount;
-       BombPickUp.text = "Bomb Pick up " + pickup.currentBombs;
+       TrashPickUp.text = "Trash " + pickup.currentAmount;
+       BombPickUp.text = "Bombs " + pickup.currentBombs;
     }
 
 }
