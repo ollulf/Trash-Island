@@ -8,6 +8,9 @@ public class BombScript : MonoBehaviour
     [SerializeField]
     GameObject trashParticles;
 
+    [SerializeField]
+    ParticleSystem explosionParticleSystem;
+
     public bool isActive = false;
 
     // Update is called once per frame
@@ -33,12 +36,14 @@ public class BombScript : MonoBehaviour
 
     private void ExplosionVisualisation() 
     {
-        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
-        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
-        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
-        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
-        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
-        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
-        Instantiate(trashParticles, gameObject.transform.position, Quaternion.identity);
+        Instantiate(explosionParticleSystem, transform.position, Quaternion.identity);
+
+        Instantiate(trashParticles, transform.position, Quaternion.identity);
+        Instantiate(trashParticles, transform.position, Quaternion.identity);
+        Instantiate(trashParticles, transform.position, Quaternion.identity);
+        Instantiate(trashParticles, transform.position, Quaternion.identity);
+        Instantiate(trashParticles, transform.position, Quaternion.identity);
+        Instantiate(trashParticles, transform.position, Quaternion.identity);
+        Instantiate(trashParticles, transform.position, Quaternion.identity);
     }
 }
