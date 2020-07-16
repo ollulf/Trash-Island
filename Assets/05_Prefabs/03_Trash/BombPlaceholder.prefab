@@ -139,4 +139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashParticles: {fileID: 1258042984590828256, guid: dee76235e9684aa4e8a263a60af966d1,
     type: 3}
+  explosionParticleSystem: {fileID: 6730187909359874807, guid: 39f032e18d838f448a1da350ddb2c234,
+    type: 3}
   isActive: 0
