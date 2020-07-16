@@ -773,7 +773,7 @@ MonoBehaviour:
   pools:
   - tag: Trash
     prefab: {fileID: 2132437934}
-    size: 200
+    size: 150
 --- !u!4 &1087733836
 Transform:
   m_ObjectHideFlags: 0

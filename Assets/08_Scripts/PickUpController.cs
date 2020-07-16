@@ -85,6 +85,7 @@ public class PickUpController : MonoBehaviour
         {
             GameObject currentTrash = Instantiate(bombModel, spawnPoint.transform.position, Camera.main.transform.rotation) as GameObject;
             currentTrash.GetComponent<Rigidbody>().AddForce(currentTrash.transform.forward * 2000);
+            currentTrash.GetComponent<BombScript>().isActive = true;
 
             currentBombs -= 1;
         }
@@ -97,14 +98,14 @@ public class PickUpController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.transform.gameObject.tag == "Trash" && currentAmount < carryingCapacity)
+            if (hit.transform.gameObject.tag == "Trash" && currentAmount < carryingCapacity && hit.distance <= 5)
             {
                 Destroy(hit.transform.gameObject);
                 Debug.Log("Picked Up Trash");
                 currentAmount += 1;
             }
 
-            else if (hit.transform.gameObject.tag == "Bomb")
+            else if (hit.transform.gameObject.tag == "Bomb" && hit.distance <= 5)
             {
                 Destroy(hit.transform.gameObject);
                 Debug.Log("Picked Up Bomb");
