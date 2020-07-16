@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.XR.WSA.Input;
 
 public class BoatController : MonoBehaviour
 {
@@ -16,8 +17,16 @@ public class BoatController : MonoBehaviour
 
     public void Awake()
     {
-        Rigidbody = GetComponent<Rigidbody>();
+        
         StartRotation = Motor.localRotation;
+    }
+
+    public void Start()
+    {
+        Rigidbody = GetComponent<Rigidbody>();
+        Rigidbody.centerOfMass = Vector3.zero;
+        Rigidbody.inertiaTensorRotation = new Quaternion(0, 0, 0, 1);
+        
     }
 
     private void FixedUpdate()

@@ -65,6 +65,7 @@ public class PossessBoat : MonoBehaviour
         player.GetComponent<PlayerMovement>().enabled = false;
         player.GetComponent<Collider>().isTrigger = true;
         player.GetComponent<Rigidbody>().isKinematic = true;
+        boat.GetComponent<Rigidbody>().isKinematic = false;
         boat.GetComponent<BoatController>().enabled = true;
         player.GetComponentInChildren<Camera>().enabled = false;
         boatCamera.SetActive(true);
@@ -78,6 +79,7 @@ public class PossessBoat : MonoBehaviour
         player.transform.parent = null;
         player.GetComponent<PlayerMovement>().enabled = true;
         player.GetComponent<Collider>().isTrigger = false;
+        boat.GetComponent<Rigidbody>().isKinematic = true;
         boat.GetComponent<BoatController>().enabled = false;
         player.GetComponentInChildren<Camera>().enabled = true;
         player.GetComponent<Rigidbody>().isKinematic = false;
