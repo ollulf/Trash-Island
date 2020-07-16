@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8795785172206185992}
   - component: {fileID: 5602253182218559917}
   - component: {fileID: 7663935656076285287}
+  - component: {fileID: 7073721853868266508}
   m_Layer: 0
   m_Name: plam2
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7073721853868266508
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8168184675841291442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1383147162566438393, guid: d8fb0759c4e154461b00e0b4f954b034, type: 3}
