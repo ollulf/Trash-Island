@@ -17,6 +17,7 @@ public class UiCounter : MonoBehaviour
     void Start()
     {
         TrashPickUp = GetComponent<Text>();
+       
         pickup = player.GetComponent<PickUpController>();
     }
 
