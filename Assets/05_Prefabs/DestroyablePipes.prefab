@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisPipe: {fileID: 524289213952306255}
-  destroyedPipe: {fileID: 1099659675006263652, guid: 65fb81ebb2a6e4d968894ece3694d68b,
+  destroyedPipe: {fileID: 3214894344422952715, guid: ba9af7caaac543b4189daab073db202b,
     type: 3}
 --- !u!23 &2037415056850652570
 MeshRenderer:
