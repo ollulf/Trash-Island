@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100.3, y: -123.58}
-  m_SizeDelta: {x: 326.4864, y: 816.22534}
+  m_AnchoredPosition: {x: 100.3, y: -132.15}
+  m_SizeDelta: {x: 326.4864, y: 884.77844}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158018085
 MonoBehaviour:
@@ -195,6 +195,8 @@ MonoBehaviour:
     Hanna Borbola
 
     Max Bredlau
+
+    Jean Isserstedt
 
     Martina
     Marchio
@@ -868,7 +870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 96.92421, y: -285.4}
+  m_AnchoredPosition: {x: 96.92421, y: -291}
   m_SizeDelta: {x: 624.6996, y: 418.2413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &965451943
