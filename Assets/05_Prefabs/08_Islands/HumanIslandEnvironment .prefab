@@ -2092,6 +2092,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1868376587111664995}
     m_Modifications:
+    - target: {fileID: 611354016367250041, guid: 02c722667ba21024da7f52ef1e91b852,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5942325068768054454, guid: 02c722667ba21024da7f52ef1e91b852,
         type: 3}
       propertyPath: m_Name
@@ -2182,6 +2187,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1868376587111664995}
     m_Modifications:
+    - target: {fileID: -7443986747667649527, guid: 894ee91d06f5ae746b5adcb9831ff438,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3750277178690946300, guid: 894ee91d06f5ae746b5adcb9831ff438,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2447,6 +2457,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1868376587111664995}
     m_Modifications:
+    - target: {fileID: 611354016367250041, guid: 02c722667ba21024da7f52ef1e91b852,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5942325068768054454, guid: 02c722667ba21024da7f52ef1e91b852,
         type: 3}
       propertyPath: m_Name
@@ -3242,6 +3257,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1868376587111664995}
     m_Modifications:
+    - target: {fileID: 611354016367250041, guid: 02c722667ba21024da7f52ef1e91b852,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5942325068768054454, guid: 02c722667ba21024da7f52ef1e91b852,
         type: 3}
       propertyPath: m_Name
@@ -3937,6 +3957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185506596963621911, guid: 1df6ed57a14ad9847890a590b8b652f8,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df6ed57a14ad9847890a590b8b652f8, type: 3}
 --- !u!4 &1107926365917520049 stripped
@@ -4472,6 +4497,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1868376587111664995}
     m_Modifications:
+    - target: {fileID: -7443986747667649527, guid: 894ee91d06f5ae746b5adcb9831ff438,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3750277178690946300, guid: 894ee91d06f5ae746b5adcb9831ff438,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5412,6 +5442,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185506596963621911, guid: 1df6ed57a14ad9847890a590b8b652f8,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df6ed57a14ad9847890a590b8b652f8, type: 3}
 --- !u!4 &1107926365175282220 stripped
@@ -6201,6 +6236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: rock_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185506596963621911, guid: 1df6ed57a14ad9847890a590b8b652f8,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df6ed57a14ad9847890a590b8b652f8, type: 3}
@@ -7701,6 +7741,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: rock_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185506596963621911, guid: 1df6ed57a14ad9847890a590b8b652f8,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df6ed57a14ad9847890a590b8b652f8, type: 3}
