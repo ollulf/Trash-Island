@@ -21,4 +21,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void OnCreditMenuClick()
+    {
+        SceneManager.LoadScene(7);
+    }
 }
