@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.XR.WSA.Input;
+using UnityEngine.XR.WSA;///Input;
 
 public class BoatController : MonoBehaviour
 {
