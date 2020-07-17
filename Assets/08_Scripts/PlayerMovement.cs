@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private bool IsGrounded()
     {
-        return Time.time - lastGroundedTimeStamp < Time.deltaTime;
+        return Time.time - lastGroundedTimeStamp < 0.1f;
 
     }
     private void OnCollisionStay(Collision collision)
