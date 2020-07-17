@@ -22,7 +22,7 @@ public class GameEndingManager : MonoBehaviour
 
     private bool CheckIfAllDestroyed()
     {
-        if (pipesToDestroy [0] == null)
+        if (pipesToDestroy [0] == null && pipesToDestroy [1] == null && pipesToDestroy[2] == null && pipesToDestroy[3] == null && pipesToDestroy[4] == null)
             return true;
 
         else
