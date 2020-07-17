@@ -22288,6 +22288,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 6748602643261317521, guid: 16972f535908aec46b3d089d8cf0b6bd,
+        type: 3}
+      propertyPath: far clip plane
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 8947838658245095462, guid: 16972f535908aec46b3d089d8cf0b6bd,
         type: 3}
       propertyPath: funModeEnabled
@@ -22298,7 +22303,9 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1247511134}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6748602643912347551, guid: 16972f535908aec46b3d089d8cf0b6bd, type: 3}
+    - {fileID: 6748602643912347550, guid: 16972f535908aec46b3d089d8cf0b6bd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 16972f535908aec46b3d089d8cf0b6bd, type: 3}
 --- !u!1 &1247511134 stripped
 GameObject:
